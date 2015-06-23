@@ -23,7 +23,7 @@ def rename_files():
 
 
     for file_name in file_ls:               # for through and remove any numbers or dashes from file names.
-        print ("Renaming " + file_name + "to " + file_name.translate(None, "0123456789-")) # be verbose.
+        print ("Renaming " + file_name + " to " + file_name.translate(None, "0123456789-")) # be verbose.
         os.rename(file_name, file_name.translate(None, "0123456789-"))
 
 rename_files()
