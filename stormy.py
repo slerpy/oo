@@ -28,13 +28,15 @@ def artsies():
     herman.color("yellow")          # with hints of yellow on his shell
     herman.speed(2)                 # and be a little faster than a speed(1) turtle
 
-    go_square(herman)               # i would train him to walk in a square.
+    for i in range(1,54):
+        go_square(herman)               # i would train him to walk in a square.
+        herman.right(7.5)
 
-    mildred = turtle.Turtle()       # if i had a second turtle, i would probably name her mildred
-    mildred.shape("circle")         # her shell would be like a sphere
-    mildred.color("blue")           # with beautiful hints of a nice shade of blue
-    mildred.circle(100)             # she'd be doomed to walk in a circle boohoo.
-
+    # mildred = turtle.Turtle()       # if i had a second turtle, i would probably name her mildred
+    # mildred.shape("circle")         # her shell would be like a sphere
+    # mildred.color("blue")           # with beautiful hints of a nice shade of blue
+    # mildred.circle(100)             # she'd be doomed to walk in a circle boohoo.
+    #
     window.exitonclick()            # and with a single click their world would come crashing down.
 
 artsies()
